@@ -1,0 +1,122 @@
+body {
+    background-color: rgb(35, 35, 35);
+    margin: 0; /* Remove default body margin */
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.maincontainer {
+    display: flex;
+}
+
+.container_img1 {
+    width: 34%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container_img1 img {
+    height: 100%; /* This way the image does not exceeed the container */
+}
+
+
+.container_text1 {
+    width: 66%;
+    padding: 10px;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: flex-start;
+    background-color: rgb(35, 35, 35);
+}
+
+@media screen and (max-width: 1300px) {
+    .maincontainer {
+        display: block;
+    }
+    .container_img1, .container_text1 {
+        width: 100%;
+    }
+}
+
+.container_text1 ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0;
+}
+
+li a, ul a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover, ul a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 1301px) {
+    ul, p {
+        font-size: 1.8vw;
+    }
+}
+
+.card_holder {
+    display: flex;
+    width: 66%;
+}
+
+.card {
+    position: relative;
+    background-color: rgb(48, 48, 48);
+    margin-left: 3vw;
+    margin-right: 3vw;
+    width: 23vw;
+    display: inline-block;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 50vh;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .card{
+        background-color: rgb(48, 48, 48);
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 35vw;
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+.card img {
+    max-width: 100%;
+}
+
+
+.card:hover {
+    background-color: rgb(52, 52, 52);
+}
+
+.bottom {
+    background-color: rgb(27,27,27);
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+
+label {
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+}
